@@ -5,7 +5,7 @@ ENV VERSION 0.1
 ENV XSCLI=/opt/sap/xs-cli
 ENV PATH=$PATH:${XSCLI}/bin
 WORKDIR /app
-COPY . /app
+COPY ./ /app
 RUN ls /app
 RUN cat Dockerfile
 
