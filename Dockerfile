@@ -7,6 +7,7 @@ ENV PATH=$PATH:${XSCLI}/bin
 WORKDIR /app
 COPY . /app
 RUN ls /app
+RUN cat Dockerfile
 
 # ps needs to be available to be able to be used in docker.inside, see https://issues.jenkins-ci.org/browse/JENKINS-40101
 RUN apt-get update && \
