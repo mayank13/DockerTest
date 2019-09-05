@@ -5,7 +5,7 @@ ENV VERSION 0.1
 ENV XSCLI=/opt/sap/xs-cli
 ENV PATH=$PATH:${XSCLI}/bin
 
-COPY ${XSZIP} /tmp/${XSZIP}
+COPY . /tmp/${XSZIP}
 RUN ls /tmp
 
 # ps needs to be available to be able to be used in docker.inside, see https://issues.jenkins-ci.org/browse/JENKINS-40101
